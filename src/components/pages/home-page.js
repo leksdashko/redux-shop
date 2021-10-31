@@ -1,11 +1,14 @@
 import React from "react";
-import BookstoreService from "../../services/bookstore-service";
 import BookList from '../book-list';
-
-const bookstoreService = new BookstoreService();
+import ShoppingCartTable from '../shopping-cart-table';
 
 const HomePage = () => {
-    return <BookList books={bookstoreService.getBooks()} />;
+    return (
+        <>
+        <BookList />
+        <ShoppingCartTable/>
+        </>
+    );
 };
 
 export default HomePage;
