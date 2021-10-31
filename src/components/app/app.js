@@ -1,8 +1,13 @@
-import { Component } from "react"
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import { HomePage, CartPage } from "../pages";
 
 const App = () => {
-    reutrn (
-        <div>App</div>
+    return (
+        <Switch>
+            <Route path="/"  component={HomePage} exact />
+            <Route path="/cart" component={CartPage} />
+        </Switch>
     );
 }
 

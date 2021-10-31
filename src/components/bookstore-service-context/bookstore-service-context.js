@@ -6,6 +6,6 @@ const {
 } = React.createContext();
 
 export {
-    BookstoreServiceConsumer,
-    BookstoreServiceProvider
+    BookstoreServiceProvider,
+    BookstoreServiceConsumer
 };
