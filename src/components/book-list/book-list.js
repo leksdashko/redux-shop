@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import { fetchBooks, bookAddedToCard } from "../../actions";
+import { fetchBooks, bookAddedToCart } from "../../actions";
 import BookListItem from "../book-list-item";
 import ErrorIndicator from '../error-indicator';
 import Spinner from '../spinner';
@@ -66,7 +66,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
     return {
         fetchBooks: fetchBooks(bookstoreService, dispatch),
-        onAddedToCart: (id) => dispatch(bookAddedToCard(id))
+        onAddedToCart: (id) => dispatch(bookAddedToCart(id))
     }
 };
 
